@@ -1,0 +1,250 @@
+kl, name: speech2enrich
+description: Speech2Enrich Thesis
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^3.0.1
+  speech_to_text: ^6.1.1
+  highlight_text: ^1.6.0
+  avatar_glow: ^2.0.2
+  shared_preferences: ^2.1.0
+  flip_card: ^0.7.0
+  flutter_tts: ^3.6.3
+  carousel_slider: ^4.2.1
+  flutter_gif: ^0.0.4
+  animated_text_kit: ^4.2.2
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  back_button_interceptor: ^6.0.2
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/shortmusic.mp3
+    - assets/instrucbgstory.jpg
+    - assets/scrollstory.png
+    - assets/foreststory.jpg
+    - assets/charstory.png
+    - assets/earoff.png
+    - assets/earon.png
+    - assets/score.png
+    - assets/hidden.png
+    - assets/memorybg.jpg
+    - assets/storymenu.jpg
+    - assets/memorymenu.jpg
+    - assets/abcmenu.jpg
+    - assets/ear.gif
+    - assets/check.gif
+    - assets/wrong.gif
+    - assets/images/story1images/scene1.gif
+    - assets/images/story1images/scene2.gif
+    - assets/images/story1images/scene3.gif
+    - assets/images/story1images/scene4.gif
+    - assets/images/story1images/scene5.gif
+    - assets/images/story1images/scene6.gif
+    - assets/images/story1images/scene7.gif
+    - assets/images/story1images/scene8.gif
+    - assets/images/story1images/scene9.gif
+    - assets/images/story2images/scene1.gif
+    - assets/images/story2images/scene2.gif
+    - assets/images/story2images/scene3.gif
+    - assets/images/story2images/scene4.gif
+    - assets/images/story2images/scene5.gif
+    - assets/images/story2images/scene6.gif
+    - assets/images/story2images/scene7.gif
+    - assets/images/story2images/scene8.gif
+    - assets/images/story2images/scene9.gif
+    - assets/images/story3images/scene1.gif
+    - assets/images/story3images/scene2.gif
+    - assets/images/story3images/scene3.gif
+    - assets/images/story3images/scene4.gif
+    - assets/images/story3images/scene5.gif
+    - assets/images/story3images/scene6.gif
+    - assets/images/story3images/scene7.gif
+    - assets/images/story3images/scene8.gif
+    - assets/images/story3images/scene9.gif
+    - assets/images/homescreen.png
+    - assets/images/menuscreen.png
+    - assets/images/menustory.png
+    - assets/images/menumemory.png
+    - assets/images/menuabc.png
+    - assets/images/storyscreen.png
+    - assets/images/story1menu.png
+    - assets/images/story2menu.png
+    - assets/images/story3menu.png
+    - assets/images/story1char.png
+    - assets/images/story2char.png
+    - assets/images/story3char.png
+    - assets/images/score.png
+    - assets/images/scoreboard.png
+    - assets/images/matchmemoryscreen.png
+    - assets/images/matchmemorymenu.png
+    - assets/images/reset.png
+    - assets/images/storyscoreboard.png
+    - assets/images/logo.png
+    - assets/images/abcscreen.png
+    - assets/images/abc.png
+    - assets/images/flipgame/animal1.png
+    - assets/images/flipgame/animal2.png
+    - assets/images/flipgame/animal3.png
+    - assets/images/flipgame/animal4.png
+    - assets/images/flipgame/animal5.png
+    - assets/images/flipgame/animal6.png
+    - assets/images/flipgame/animal7.png
+    - assets/images/flipgame/animal8.png
+    - assets/images/flipgame/obj5.png
+    - assets/images/flipgame/obj6.png
+    - assets/images/flipgame/obj7.png
+    - assets/images/flipgame/obj8.png
+    - assets/images/adventurestory.png
+    - assets/images/learnabc.png
+    - assets/images/matchmemory.png
+    - assets/images/chalk.png
+    - assets/images/hapii.gif
+    - assets/images/learnabc/a.gif
+    - assets/images/learnabc/b.gif
+    - assets/images/learnabc/c.gif
+    - assets/images/learnabc/d.gif
+    - assets/images/learnabc/e.gif
+    - assets/musics/story1first.mp3
+    - assets/musics/story1second.mp3
+    - assets/musics/story1third.mp3
+    - assets/musics/story1fourth.mp3
+    - assets/musics/story1fifth.mp3
+    - assets/musics/story1sixth.mp3
+    - assets/musics/story1seventh.mp3
+    - assets/musics/story1eight.mp3
+    - assets/musics/story1ninth.mp3
+    - assets/musics/story1tenth.mp3
+    - assets/musics/story1eleventh.mp3
+    - assets/musics/story2first.mp3
+    - assets/musics/story2second.mp3
+    - assets/musics/story2third.mp3
+    - assets/musics/story2fourth.mp3
+    - assets/musics/story2fifth.mp3
+    - assets/musics/story2sixth.mp3
+    - assets/musics/story2seventh.mp3
+    - assets/musics/story2eight.mp3
+    - assets/musics/story2ninth.mp3
+    - assets/musics/story2tenth.mp3
+    - assets/musics/story2eleventh.mp3
+    - assets/musics/story3first.mp3
+    - assets/musics/story3second.mp3
+    - assets/musics/story3third.mp3
+    - assets/musics/story3fourth.mp3
+    - assets/musics/story3fifth.mp3
+    - assets/musics/story3sixth.mp3
+    - assets/musics/story3seventh.mp3
+    - assets/musics/story3eight.mp3
+    - assets/musics/story3ninth.mp3
+    - assets/musics/story3tenth.mp3
+    - assets/musics/story3eleventh.mp3
+    - assets/images/scorescreen.png
+    - assets/images/star.png
+    - assets/images/nostar.png
+    - assets/musics/bgmformeny.mp3
+    - assets/images/left.png
+    - assets/images/right.png
+    - assets/images/learnabc/f.gif
+    - assets/images/learnabc/g.gif
+    - assets/images/learnabc/h.gif
+    - assets/images/learnabc/i.gif
+    - assets/images/learnabc/j.gif
+    - assets/images/learnabc/k.gif
+    - assets/images/learnabc/L.gif
+    - assets/images/learnabc/m.gif
+    - assets/images/learnabc/n.gif
+    - assets/images/learnabc/o.gif
+    - assets/images/learnabc/p.gif
+    - assets/images/learnabc/r.gif
+    - assets/images/learnabc/q.gif
+    - assets/images/learnabc/s.gif
+    - assets/images/learnabc/t.gif
+    - assets/images/learnabc/u.gif
+    - assets/images/learnabc/v.gif
+    - assets/images/learnabc/w.gif
+    - assets/images/learnabc/x.gif
+    - assets/images/learnabc/y.gif
+    - assets/images/learnabc/z.gif
+    - assets/images/btn.png
+    - assets/images/tutorial01.png
+    - assets/images/tutorial02.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
